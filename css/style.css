@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --wild_sand : #F5F5F5;
+    --royal_blue : #2563EB;
+    --pattens_blue: #DBEAFE;
+    --zumthor : #EFF6FF;
+    --french_pass : #BFDBFE
+
+}
+
+.bg__french_pass {
+    background-color: var(--french_pass);
+}
+
+.bg__wild_sand {
+    background-color: var(--wild_sand);
+}
+
+.bg__royal_blue {
+    background-color: var(--royal_blue);
+}
+
+.bg__patterns_blue {
+    background-color: var(--pattens_blue);
+}
+
+.bg__zumthor {
+    background-color: var(--zumthor);
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.outer_container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    width: 324px;
+    height: 324px;
+    border-radius: 10px;
+    border : 1px dashed;
+    border-color: var(--royal_blue);
+}
+
+.circle_outer {
+    width: 260px;
+    height: 260px;
+    margin: 32px;
+    border-radius: 50%;
+    border: 25px solid blue;
+    border-color: var(--pattens_blue);
+    border-left-color: var(--french_pass);
+    border-bottom: 25px solid transparent;
+    position: relative;
+    z-index: 300;
+}
+
+.circle_inner-dashed {
+    border : 1px dashed var(--royal_blue);
+    width: 162px;
+    height: 197px;
+    border-radius: 50%;
+    border-bottom-color:var(--zumthor) ;
+}   
+
+.text-result {
+    color: var(--royal_blue);
+    position: absolute;
+    bottom: -22px;
+    text-align: center;
+}
+
+.reading-meter__text {
+    color: var(--royal_blue);
+    position: absolute;
+    width: 145px;
+    bottom : 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashed-border__bottom {
+    border-bottom: 2px dashed var(--royal_blue);
+    width: 107px;
+    position: absolute;
+    rotate: 233deg;
+    top: 88px;
+    left: 6px;
+    z-index: 1;
+}
+
+.dashed-border__top {
+    border-top: 2px dashed var(--royal_blue);
+    width: 104px;
+    position: absolute;
+    rotate: 224deg;
+    top: 83px;
+    left: 15px;
+    z-index: 1;
+}
+
+
+.needle_back {
+    position: absolute;
+    border-top: 2px dashed var(--royal_blue);
+    border-left: 2px dashed var(--royal_blue);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    top: 118px;
+    left: 90px;
+    rotate: 181deg;
+}
+
+.needle_base {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border: 2px dashed var(--royal_blue);
+    border-radius: 50%;
+    top: 106px;
+    left: 79px;
+}
+
+.needle_center {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border: 2px dashed var(--royal_blue);
+    border-radius: 50%;
+    top: 120px;
+    left: 93px;
+}
+
+.capsule__1 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: var(--french_pass);
+    border-radius: 16px;
+    padding-left: 13px;
+    padding-right: 10px;
+    top: 211px;
+    left: -7px;
+    rotate: 55deg;
+}
+
+.capsule__2 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: var(--pattens_blue);
+    border-radius: 50%;
+    top: 221px;
+    left: 174px;
+    rotate: 55deg;
+}
+
+.capsule__3 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: var(--french_pass);
+    border-radius: 50%;
+    top: 13px;
+    left: 12px;
+    rotate: 55deg;
+}
+
+.needle-front {
+    width: 0;
+    height: 0;
+    border-top: 2px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 92px solid var(--french_pass);
+    transform: rotate(46deg);
+    position: absolute;
+    top: 70px;
+    left: 0px;
+
+}
